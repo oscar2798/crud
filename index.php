@@ -1,4 +1,4 @@
-<?php include("db.php")?>
+<?php include("utilidades/db.php")?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -44,7 +44,7 @@
                 <?php session_unset(); } ?>
 
             <div class="card card-body">
-                 <form action="guardar.php" method="POST">
+                 <form action="utilidades/guardar.php" method="POST">
                    <div class="form-group">
                         <input type="text" name="titulo" class="form-control"
                         placeholder="Titulo de la Tarea" autofocus>
@@ -80,9 +80,9 @@
                                     <td><?php echo $row['descripcion'] ?></td>
                                     <td><?php echo $row['fecha'] ?></td>
                                     <td>
-                                        <a class="btn btn-primary" href="editar.php?id=<?php echo $row['id'] ?>">Editar</a>
+                                        <a class="btn btn-primary" href="utilidades/editar.php?id=<?php echo $row['id'] ?>">Editar</a>
                  
-                                        <a class="btn btn-danger" href="eliminar.php?id=<?php echo $row['id'] ?>">Eliminar</a>
+                                        <a class="btn btn-danger" href="utilidades/eliminar.php?id=<?php echo $row['id'] ?>">Eliminar</a>
                                     </td>
                                 </tr>
 

@@ -5,7 +5,7 @@ $host="34.72.10.140";
 $port=3306;
 $socket="";
 $user="root";
-$password="";
+$password="tkdlove";
 $dbname="crud";
 
 $con = new mysqli($host, $user, $password, $dbname, $port, $socket)
